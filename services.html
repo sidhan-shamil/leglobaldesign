@@ -1,183 +1,588 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
 
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>Gallery | All Works</title>
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link href="vendors/prism/prism.css" rel="stylesheet">
-    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/css/theme.min.css" rel="stylesheet" />
-    <link href="assets/css/user.min.css" rel="stylesheet" />
-    <link href="vendors/glightbox/glightbox.min.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <div class="cursor-outer d-none d-md-block"></div>
-      <nav class="navbar navbar-light py-3 px-0 overflow-hidden">
-        <div class="container px-md-5">
-          <div class="row w-100 g-0 justify-content-between">
-            <div class="col-8">
-              <div class="d-inline-block"><a class="navbar-brand pt-0 fs-3 text-black d-flex align-items-center" href="index.html"><img class="img-fluid" src="assets/img/icons/logo-icon.png" alt="" /><span class="fw-bolder ms-2">Foto</span><span class="fw-thin">gency</span></a></div>
-              <div class="mt-4 d-none d-lg-block">
-                <h1 class="text-uppercase fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Gallery</h1>
-                <h1 class="d-none d-md-block fw-bolder text-outlined fs-7 text-white lh-1 mt-n4 position-relative z-index--1">All Works</h1>
-              </div>
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/android-chrome-512x512.png" />
+    <title>Services</title>
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.menu.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="Lfa-page-loading" class="Lfa-pageloading">
+        <div class="Lfa-pageloading-inner">
+             <!-- <img src="images/microsoft-logo-svgrepo-com.svg" class="logo" alt=""> -->
+             <h1 class="mb-0" style="font-family: 'Libre Baskerville', serif;font-size: 2.2rem;color: #c5a47e;">Le global design</h1>
             </div>
-            <div class="col-4 d-lg-none text-end pe-0"><button class="btn p-0 shadow-none text-black fs-2 d-inline-block" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle offcanvas navigation"><span class="menu-bar"></span></button></div>
-            <div class="offcanvas offcanvas-end px-0" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasTitle" aria-hidden="true">
-              <div class="offcanvas-header justify-content-end">
-                <h5 class="visually-hidden offcanvas-title" id="navbarOffcanvasTitle">Menu</h5><button class="btn p-0 shadow-none text-black fs-2 d-inline text-end" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><span class="menu-close-bar"></span></button>
-              </div>
-              <div class="offcanvas-body px-0">
-                <div class="d-lg-flex flex-center-start gap-3 overflow-hidden">
-                  <ul class="navbar-nav ms-auto fs-4 ps-6">
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5 active" aria-current="page" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="exhibitions.html">Exhibitions</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link d-inline-block nav-text-outlined lh-1 text-white fs-5" aria-current="page" href="blog.html">Blog</a></li>
-                  </ul>
+    </div>
+    <!-- Wrapper -->
+    <div id="next-page-wrapper">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+                        <div class="next-header-container d-flex">
+                            <!-- Logo -->
+                            <div class="text-center flex-grow-1">
+                                <a href="index.html">
+                                    <!-- <img src="images/microsoft-logo-svgrepo-com.svg" alt="" class="logo"> -->
+                                    <h1 class="mb-0" style="font-family: 'Libre Baskerville', serif;font-size: 2.2rem;color: #c5a47e;">Le global design</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
+                              <ul class="navbar-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a href="products.html" class="nav-link">Products</a>
+                                    </li>
+                                  <li class="nav-item active">
+                                        <a href="#" class="nav-link">Services<span class="sr-only">(current)</span></a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                              </ul>
+                            </div>
+                            
+                            <!-- toggle structure
+label
+    input
+    svg
+
+the idea is to
+1. hide the input on top of the svg
+1. change the position/opacity of the svg as the input is toggled
+-->
+<div class="switch ml-auto mt-3">
+    <label for="toggle">
+        <input type="checkbox" />
+
+        <svg viewBox="0 0 100 45" width="400"
+            height="180">
+            <defs>
+                <!-- rectangle used for the background and re-used in the clip and mask elements -->
+                <rect id="background" x="0" y="0"
+                    width="90" height="40" rx="20">
+                </rect>
+
+                <!-- clip cutting out the elements exceeding the rounded rectangle -->
+                <clipPath id="clip">
+                    <use href="#background"></use>
+                </clipPath>
+
+                <!-- for the light variant -->
+                <!-- gradient used for the background -->
+                <linearGradient id="gradient-light"
+                    x1="0" x2="0" y1="0" y2="1">
+                    <stop stop-color="#8bc8f2"
+                        offset="0"></stop>
+                    <stop stop-color="#fff" offset="1">
+                    </stop>
+                </linearGradient>
+
+                <!-- filter applied to (a copy of) the sun to blur the edges -->
+                <filter id="blur-light">
+                    <feGaussianBlur stdDeviation="1">
+                    </feGaussianBlur>
+                </filter>
+
+                <!-- pattern for the waves -->
+                <pattern id="pattern-light" width="0.1"
+                    height="1" viewBox="0 0 10 45">
+                    <path fill="#40b5f8"
+                        d="M 0 0 a 6 6 0 0 0 10 0 v 45 h -10 z">
+                    </path>
+                </pattern>
+
+
+                <!-- for the dark variant -->
+                <!-- gradient used for the background -->
+                <linearGradient id="gradient-dark"
+                    x1="0" x2="0" y1="0" y2="1">
+                    <stop stop-color="#1F2241"
+                        offset="0"></stop>
+                    <stop stop-color="#7D59DF"
+                        offset="1"></stop>
+                </linearGradient>
+
+                <!-- gradient used for the the mask
+the idea is to have the mask use the [#000-#fff] gradient to progressively hide the shapes as they approach the bottom
+-->
+                <linearGradient id="gradient-mask"
+                    x1="0" x2="0" y1="0" y2="1">
+                    <stop stop-color="#000" offset="0">
+                    </stop>
+                    <stop stop-color="#fff" offset="1">
+                    </stop>
+                </linearGradient>
+
+                <!-- mask to conceal the stars at the bottom of the toggle -->
+                <mask id="mask-dark">
+                    <use fill="url(#gradient-mask)"
+                        href="#background"></use>
+                </mask>
+
+                <!-- gradients for the moon and craters -->
+                <radialGradient id="gradient-moon">
+                    <stop stop-color="#fdfdfd"
+                        offset="0.7"></stop>
+                    <stop stop-color="#e2e2e2"
+                        offset="1"></stop>
+                </radialGradient>
+
+                <radialGradient id="gradient-crater">
+                    <stop stop-color="#e0e0e0"
+                        offset="0"></stop>
+                    <stop stop-color="#d9d9d9"
+                        offset="1"></stop>
+                </radialGradient>
+
+                <!-- pattern for the stars -->
+                <pattern id="pattern-dark" width="0.2"
+                    height="1" viewBox="0 0 20 45">
+                    <path fill="#fff"
+                        d="M 2 5 l 1 1 l -1 1 l -1 -1 l 1 -1">
+                    </path>
+                    <path fill="#fff"
+                        d="M 10 16 l 1 1 l -1 1 l -1 -1 l 1 -1">
+                    </path>
+                    <path fill="#fff"
+                        d="M 16 27 l 1 1 l -1 1 l -1 -1 l 1 -1">
+                    </path>
+                    <path fill="#fff"
+                        d="M 10 38 l 1 1 l -1 1 l -1 -1 l 1 -1">
+                    </path>
+                </pattern>
+            </defs>
+
+            <!-- actual graphics
+the idea is to include the elements for the light variant on top of the dark counterpart and change the opacity when the input is toggled
+! beside changing the opacity of the .light elements the transition also affects the position of the sun/moon and of the patterns
+-->
+            <g transform="translate(5 2.5)">
+                <g clip-path="url(#clip)">
+                    <g class="dark">
+                        <use fill="url(#gradient-dark)"
+                            href="#background"></use>
+                        <!-- translate the stars above the toggle
+! the change in y scale allows to transition the stars with a faster pace (see the CSS)
+-->
+                        <g class="background"
+                            transform="translate(0 -40) scale(1 0.4)">
+                            <rect
+                                transform="translate(-40 0) rotate(4)"
+                                fill="url(#pattern-dark)"
+                                x="0" y="0" width="100"
+                                height="45"></rect>
+                        </g>
+                        <use mask="url(#mask-dark)"
+                            fill="url(#gradient-dark)"
+                            href="#background"></use>
+                    </g>
+                    <g class="light">
+                        <use fill="url(#gradient-light)"
+                            href="#background"></use>
+                        <!-- translate the waves above the toggle and reset their position with an opposite translation
+by translating the first group to 0 (alongside the stars) the waves are pushed below
+-->
+                        <g class="background"
+                            transform="translate(-30 -20)">
+                            <g
+                                transform="translate(30 20)">
+                                <rect
+                                    fill="url(#pattern-light)"
+                                    x="-5" y="27.5"
+                                    width="100"
+                                    height="45"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+
+            <g transform="translate(77.5 22.5)">
+                <!-- translate this group to move the sun/moon to the right -->
+                <g class="translate"
+                    transform="translate(-55)">
+                    <!-- rotate this group to rotate the moon -->
+                    <g class="rotate"
+                        transform="rotate(-100)">
+                        <g class="dark">
+                            <circle
+                                fill="url(#gradient-moon)"
+                                cx="0" cy="0" r="20.5">
+                            </circle>
+                            <g
+                                transform="translate(-8 -7.5)">
+                                <ellipse
+                                    transform="rotate(-30)"
+                                    fill="url(#gradient-crater)"
+                                    stroke="#d5d5d5"
+                                    stroke-width="0.2"
+                                    cx="0" cy="0" rx="4"
+                                    ry="3"></ellipse>
+                            </g>
+                            <g
+                                transform="translate(11 5)">
+                                <ellipse
+                                    fill="url(#gradient-crater)"
+                                    stroke="#d5d5d5"
+                                    stroke-width="0.2"
+                                    cx="0" cy="0"
+                                    rx="3.85" ry="4">
+                                </ellipse>
+                            </g>
+                            <g
+                                transform="translate(-6 12)">
+                                <ellipse
+                                    transform="rotate(-10)"
+                                    fill="url(#gradient-crater)"
+                                    stroke="#d5d5d5"
+                                    stroke-width="0.2"
+                                    cx="0" cy="0" rx="2"
+                                    ry="1.75"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                    <g class="light">
+                        <circle fill="#FFD21F" cx="0"
+                            cy="0" r="21"
+                            filter="url(#blur-light)">
+                        </circle>
+                        <circle fill="#FFD21F" cx="0"
+                            cy="0" r="20.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </svg>
+</div>
+                          </nav>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-4">
-              <div class="d-none d-lg-flex justify-content-end position-relative z-index-1">
-                <div class="position-absolute absolute-centered z-index--1">
-                  <h1 class="ms-2 fw-bolder text-outlined text-uppercase text-white pe-none display-1">Gallery</h1>
+        </header>
+        <!-- Gallery -->
+        <section class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-md-12 animate-box"
+                    data-animate-effect="fadeInUp">
+                    <h4><span class="p-0">Our Services</span></h4>
                 </div>
-                <div class="d-flex gap-3 align-items-start"><a class="mb-0 ms-auto text-warning fs-0 fw-bold text-uppercase" href="blog.html#contact">Contact Now</a>
-                  <ul class="navbar-nav navbar-fotogency ms-auto text-end">
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0 active" aria-current="page" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="exhibitions.html">Exhibitions</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="about.html">About</a></li>
-                    <li class="nav-item px-2 position-relative"><a class="nav-link pt-0" aria-current="page" href="blog.html">Blog</a></li>
-                  </ul>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">01</div>
+                                    <h5>Wallpapers</h5>
+                                    <p>A wallpaper wraps an entire room in eternal beauty, but without the need for a lick of paint. Prove your daring side with pattern-play wallpaper. Impressive brilliance awaits by adding light to any background throughout your home.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-2">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">02</div>
+                                    <h5>Fabrics</h5>
+                                    <p>This special selection of linen, cotton, and silk fabrics will let you finally pick the perfect fabric for your draperies and curtains. With our all types of fabrics, you can pick designs such as super bright florals to subtler stripes - all in eye-catching floral patterns!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-3">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">03</div>
+                                    <h5>Flooring</h5>
+                                    <p class="">Absolute Flooring and Tiles is the place you can count on. All your flooring needs: carpets, solid hardwood, laminate, cork, vinyl. From your one stop florist to cool tiled moments - our experts are professionals at what they do!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-4">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">04</div>
+                                    <h5>Upholstery</h5>
+                                    <p>upholstery is a complete home furniture store that specializes only in need of upholstery services and materials. Whether you are a company dealing with the design and manufacturing of upholstuff, or looking for high-quality materials that will last durability, our company has got what you need.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-5">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">05</div>
+                                    <h5>Space Planning</h5>
+                                    <p>If you want to design the perfect space, the first question to ask is what outcome do you want to achieve? Zero clutter, focus on core activities, manly feel, vibrant community?</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">06</div>
+                                    <h5>Design Consultation</h5>
+                                    <p>You have a new office space but you want more than just the generic cubicle. Trust design-loving consultants with years of experience designing inspiring and functional spaces. </p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">07</div>
+                                    <h5>Wall Coverings</h5>
+                                    <p>Adept at uniting historical and modern aesthetics, designers find endless inspiration in the company’s inexhaustible archive of wallpaper collections. </p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">08</div>
+                                    <h5>Carpeting</h5>
+                                    <p>Carpeting adds warmth and comfort to your home by increasing the sound absorption and insulation, ensuring your floor is warm in winter and cool in summer. A carpeted floor is a beautiful, functional, and economical flooring option for families with kids and pets.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">09</div>
+                                    <h5>Outdoor Fabrics</h5>
+                                    <p>Decorate your outdoor space with premium materials designed to last. Sunbrella® furniture fabrics are produced from tough acrylic fibers, so they resist stains and mildew while maintaining their good looks indoors or out. Because Sunbrella® is manufactured using 100% solution-dyed yarns, the color won't fade or wash out, so you can be sure they'll remain vibrant for years to come, even under intense sun!</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">10</div>
+                                    <h5>Outdoor Decking</h5>
+                                    <p>Step out onto terraces and balconies in style and comfort, with our easy-to-lay outdoor flooring. The decking is an instant way to upgrade any outdoor space and create an area for lounging and dining. And when seasonal weather sends you indoors, it’s easy to disassemble and store, too</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">11</div>
+                                    <h5>String Curtains</h5>
+                                    <p>String Curtains are design classics evoking a decorative, modern, playful, yet elegant statement. Use them as a room divider, window decoration or as an extravagant attention-getter at a trade show. These curtains are the unique interaction of light and shadow, creating a breathtaking timeless elegance. They offer a bold minimalism and a transparent presence that can’t be achieved with any other fabric.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">12</div>
+                                    <h5>Genuine Leather/Hides</h5>
+                                    <p>As Qatar’sdealerfor the largest range of leather hides we like to think we know a thing or two about leather. Why does this matter to you? Because we want to work with you, and help you produce high quality leather projects time and time again.
+
+A phenomenal range of colors means we will be able to help you, no matter how unusual the request. We even offer a range of complementary specialist services to help your work stand out from the crowd.
+</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">13</div>
+                                    <h5>Window Treatment – Blinds</h5>
+                                    <p>Our exclusive collection of custom shades, blinds and drapery. Every product is designed + assembled in the Middle East to your exact specifications. To ensure the highest quality standards possible, every treatment is hung and tested prior to shipment.
+
+12 Types of Window Treatments are:
+
+Roller Shades, Solar Shades, Roman Shades, Wood Blinds, Woven Wood Shades, Vertical Blinds, Cellular Shades, Pleated Shades, Metal Blinds, Custom Drapes, Drapery Hardware, Valances and Cornices</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">14</div>
+                                    <h5>Trimmings & Accessories</h5>
+                                    <p>Our showroom is home to one of the largest trim and accessory collections in Doha. The clever use of trims, braids and tiebacks can provide opportunities to introduce textures and accent colors, giving a unique finish to your soft furnishings. Traditionally, trims were used along the leading edges of silk curtains to protect them from damage from light and handling and this reasoning still stands true today. The look of a pair of curtains can also be simply altered just by changing the style or colour of a trim.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">15</div>
+                                    <h5>Lighting & Lamps</h5>
+                                    <p>Lighting is what turns your home into a place for doing things you love – whether it’s reading a book, preparing dinner or getting cozy on the sofa. That’s why you’ll find so many ways to make your home a little brighter – and energy efficient ways of keeping it that way.
+
+We have an extensive range of floor lamps, table lamps, pendants, shades & glassware. With an emphasis on style, quality and affordability.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">16</div>
+                                    <h5>Furniture</h5>
+                                    <p>We offers quality furniture at a better value and with shorter lead times. Our customers have the opportunity to get the furniture they wanted in the budget and timeframe they needed. With exceptional value and design-driven products focused on today’s working environments, we continue to grow and introduce innovative solutions that create spaces where people want to be.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-box pb-4"
+                    data-animate-effect="fadeInUp">
+                    <div class="card h-100 item">
+                        <div class="item bg-6">
+                            <div class="con">
+                                <a href="#">
+                                    <div class="numb">17</div>
+                                    <h5>Linens</h5>
+                                    <p>Our fresh and trendy linen includes flat sheets, fitted sheets, duvets, mattress protectors, pillow covers, bed runners, bed skirting’s, bath mats, bath robes, shower curtains, hand towels, table cloths, chair covers, table runners, backdrops and napkins. We work closely with you to guarantee the perfect linen products and installation to match your vision.
+
+We’ve built our company around the idea that our clients deserve the best quality of linen available at a highly affordable price.</p> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row g-0 mt-4 d-lg-none">
-            <h1 class="text-uppercase ps-0 fs-lg-7 fs-5 fw-bolder text-300 lh-1 position-relative z-index-0">Gallery</h1>
-            <h1 class="fw-bolder text-outlined ps-0 fs-lg-7 fs-sm-6 fs-5 text-white lh-1 mt-sm-n4 mt-n3 position-relative z-index--1">All Works</h1>
-          </div>
         </div>
-      </nav>
-      <section class="pt-3 pb-9 position-relative">
-        <div class="container px-md-5">
-          <div class="position-md-absolute start-0 ms-2 mt-3 mb-4">
-            <ul class="nav gallery-tab d-flex gap-3" data-filter-nav="data-filter-nav">
-              <li class="nav-item"><a class="nav-link p-0 py-md-2 isotope-nav active" href="#!" data-filter="*">All</a></li>
-              <li class="nav-item"><a class="nav-link p-0 py-md-2 isotope-nav" href="#!" data-filter=".shortfilms">Short films</a></li>
-              <li class="nav-item"><a class="nav-link p-0 py-md-2 isotope-nav" href="#!" data-filter=".professional">Professional</a></li>
-              <li class="nav-item"><a class="nav-link p-0 py-md-2 isotope-nav" href="#!" data-filter=".commercial">Commercial</a></li>
-            </ul>
-          </div>
-          <div class="row g-3" data-isotope='{"layoutMode":"packery"}'>
-            <div class="col-lg-3 col-sm-6 col-12 shortfilms gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/1.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-3 col-sm-6 col-12 shortfilms gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/2.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-6 col-12 shortfilms gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/3.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-6 col-12 professional gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/4.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-3 col-sm-6 col-12 professional gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/5.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-3 col-sm-6 col-12 professional gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/6.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-3 col-sm-6 col-12 commercial gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/7.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-3 col-sm-6 col-12 commercial gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/8.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-            <div class="col-lg-6 col-12 commercial gallery-item isotope-item"><img class="img-fluid w-100" src="assets/img/gallery/9.png" alt="" data-glightbox="title: To infinity and beyond; description: Iching biching chiching" /></div>
-          </div>
-        </div>
-      </section>
-    </main><!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
-
-    <footer class="bg-footer-black" id="footer">
-      <div class="container py-7 px-md-5">
-        <div class="row g-0">
-          <div class="col-md-6 mb-5 mb-md-0">
-            <div class="mb-4 d-inline-block"><a class="navbar-brand pt-0 fs-3 text-white d-flex align-items-center" href="index.html"><img class="img-fluid" src="assets/img/icons/dark-logo-icon.png" alt="" width="25" height="25" /><span class="fw-bolder ms-2">Foto</span><span class="fw-thin">gency</span></a></div>
-            <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-map-marker-alt"></i><a class="nav-link text-300 d-inline" href="https://www.google.com/maps/place/2109+WS+09+Oxford+Rd+%23127+ParkVilla+Hills,+">2109 WS 09 Oxford Rd #127 ParkVilla Hills, MI 48334</a></div>
-            <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-phone"></i><a class="nav-link text-300 d-inline" href="tel:+8801976476893">+88 019 76456893</a></div>
-            <div class="col-12 col-md-10 text-300 mb-3"><i class="fas fa-envelope"></i><a class="nav-link text-300 d-inline" href="mailto:scrscrumbledegg@gmail.com">scrumbledegg@gmail.com</a></div>
-          </div>
-          <div class="col-md-6">
-            <h5 class="text-white mb-2">SUBSCRIBE TO OUR NEWSLETTER</h5>
-            <form>
-              <div class="form-floating mb-5 position-relative text-200"><input class="form-control form-fotogency-header-control text-200" id="email" type="email" placeholder="name@example.com" required="required" /><label class="text-300 mb-1" for="email">Email</label>
-                <div class="position-absolute end-0 top-0"><button class="btn shadow-none px-0" type="submit"><img class="ms-3" src="assets/img/icons/long-arrow.png" alt="" /></button></div>
-              </div>
-            </form>
-            <div class="d-flex gap-2 flex-wrap justify-content-between align-items-center"><a class="social-icons" href="https://www.facebook.com/" target="_blank">Facebook</a><a class="social-icons" href="https://www.flickr.com/photos/" target="_blank">Flickr</a><a class="social-icons" href="https://twitter.com/" target="_blank">Twitter</a><a class="social-icons" href="https://www.instagram.com/" target="_blank">Instagram</a><a class="social-icons" href="https://www.youtube.com/" target="_blank">Youtube</a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="bg-black py-0">
-      <div class="container px-md-5">
-        <div class="row g-0 justify-content-md-between justify-content-evenly py-4">
-          <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
-            <p class="fs--1 my-2 fw-light text-100">All rights Reserved &copy; Your Company, 2022</p>
-          </div>
-          <div class="col-12 col-sm-8 col-md-6">
-            <p class="fs--1 fw-light my-2 text-center text-md-end text-100"> Made with&nbsp;<svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#F95C19" viewBox="0 0 16 16">
-                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
-              </svg>&nbsp;by&nbsp;<a class="fw-bold text-warning" href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
-          </div>
-        </div>
-      </div><!-- end of .container-->
-    </section><!-- <section> close ============================-->
-    <!-- ============================================-->
-
-
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="vendors/popper/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/anchorjs/anchor.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="vendors/isotope-layout/isotope.pkgd.min.js"> </script>
-    <script src="vendors/isotope-packery/packery-mode.pkgd.min.js"> </script>
-    <script src="vendors/glightbox/glightbox.min.js"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
-    <script src="vendors/lodash/lodash.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="vendors/prism/prism.js"></script>
-    <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-  </body>
-
+    </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container next-footer-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="next-social-icons">
+                            <li class="next-social-icons-item">
+                                <a class="next-social-link" href="https://instagram.com/leglobaldesign?igshid=YmMyMTA2M2Y=">
+                                    <span
+                                        class="next-social-icon fa fa-instagram"></span>
+                                </a>
+                            </li>
+                            <li class="next-social-icons-item">
+                                <a class="next-social-link" href="https://wa.me/message/ACACC5ZCUZJVB1">
+                                    <span
+                                        class="next-social-icon fa fa-whatsapp"></span>
+                                </a>
+                            </li>
+                            <li class="next-social-icons-item">
+                                <a class="next-social-link" href="contact.html">
+                                    <span
+                                        class="next-social-icon fa fa-phone"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery -->
+    <script src="js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/bootstrap.menu.js"></script>
+    <script src="js/plugins/modernizr-2.6.2.min.js"></script>
+    <script src="js/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/plugins/swiper.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/isotope.pkgd.min.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
