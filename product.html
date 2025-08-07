@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Global Design</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="40x40">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="40x40">
 
 
     <!-- Tailwind CSS -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
     <script>
         tailwind.config = {
@@ -60,8 +60,8 @@
     <header
         class="h-[80px] flex items-center justify-between px-6 py-6 md:px-20 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
         <a href="index.html" class="block">
-      <img src="assets/images/logo.png" alt="Le Global Design Logo" class="h-[40px]">
-    </a>
+            <img src="assets/images/logo.png" alt="Le Global Design Logo" class="h-[40px]">
+        </a>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-6">
@@ -138,17 +138,74 @@
             </template>
         </section> -->
         <section x-data="{ 
-        allLogos: Array.from({ length: 43 }, (_, i) => `assets/images/logos/prod_${i + 1}.png`), 
-        visibleCount: 15 
+        allLogos: [
+        { src: 'assets/images/logos/prod_1.png', link: 'https://www.borastapeter.com/' },
+        { src: 'assets/images/logos/prod_2.png', link: 'https://coordonne.com/' },
+        { src: 'assets/images/logos/prod_3.png', link: 'https://www.sunbrella.com/' },
+        { src: 'assets/images/logos/prod_4.png', link: 'https://mindtheg.com/?___store=en&___from_store=default' },
+        { src: 'assets/images/logos/prod_5.png', link: 'https://www.hohenberger-wallcoverings.com/' },
+        { src: 'assets/images/logos/prod_6.png', link: 'https://sandersondesign.group/' },
+        { src: 'assets/images/logos/prod_7.png', link: 'https://www.casal.fr/' },
+        { src: 'assets/images/logos/prod_8.png', link: 'https://www.decortex.com/' },
+        { src: 'assets/images/logos/prod_9.png', link: 'http://www.pasayafabrics.com/' },
+        { src: 'assets/images/logos/prod_10.png', link: 'https://www.phillipjeffries.com/' },
+        { src: 'assets/images/logos/prod_11.png', link: 'https://www.luigi-bevilacqua.com/' },
+        { src: 'assets/images/logos/prod_12.png', link: 'https://www.realpiel.it/' },
+        { src: 'assets/images/logos/prod_13.png', link: 'https://delius.de/' },
+        { src: 'assets/images/logos/prod_14.png', link: 'https://www.desima.com/' },
+        { src: 'assets/images/logos/prod_15.png', link: 'https://austexfabrics.com.au/' },
+        { src: 'assets/images/logos/prod_16.png', link: 'https://elitis.fr/en' },
+        { src: 'assets/images/logos/prod_17.png', link: 'https://en.comersan.com/' },
+        { src: 'assets/images/logos/prod_18.png', link: 'https://www.warwick.com.au/' },
+        { src: 'assets/images/logos/prod_19.png', link: 'https://www.designparquet.com/' },
+        { src: 'assets/images/logos/prod_20.png', link: 'https://emilianaparati.com/' },
+        { src: 'assets/images/logos/prod_21.png', link: 'https://www.mayaromanoff.com/' },
+        { src: 'assets/images/logos/prod_22.png', link: 'https://www.foglizzo.com/' },
+        { src: 'assets/images/logos/prod_23.png', link: 'https://www.futuraleathers.com/en' },
+        { src: 'assets/images/logos/prod_24.png', link: 'https://www.rioma.com/' },
+        { src: 'assets/images/logos/prod_25.png', link: 'https://www.irisun.com/' },
+        { src: 'assets/images/logos/prod_26.png', link: 'https://www.texout.com/' },
+        { src: 'assets/images/logos/prod_27.png', link: 'https://sotexpro.fr/en/' },
+        { src: 'assets/images/logos/prod_28.png', link: 'https://hertexhaus.co.za/' },
+        { src: 'assets/images/logos/prod_29.png', link: 'https://novatapiceria.com/' },
+        { src: 'assets/images/logos/prod_30.png', link: 'https://clarke-clarke.sandersondesigngroup.com/' },
+        { src: 'assets/images/logos/prod_31.png', link: 'https://www.irsspalmati.it/' },
+        { src: 'assets/images/logos/prod_32.png', link: 'https://www.mattesammann.de/index.php/mattes-ammann-familienunternehmen-en.html?language=en' },
+        { src: 'assets/images/logos/prod_33.png', link: 'https://www.armanicasa-wallcoverings.com/en/' },
+        { src: 'assets/images/logos/prod_34.png', link: 'https://www.abitex.eu/en/home-page/home.php' },
+        { src: 'assets/images/logos/prod_35.png', link: 'https://koroseal.com/' },
+        { src: 'assets/images/logos/prod_36.png', link: 'https://newmor.com/' },
+        { src: 'assets/images/logos/prod_37.png', link: 'https://www.tapetex.com/' },
+        { src: 'assets/images/logos/prod_38.png', link: 'https://www.houles.com/' },
+        { src: 'assets/images/logos/prod_39.png', link: 'https://holdendecor.co.uk' },
+        { src: 'assets/images/logos/prod_40.png', link: 'http://www.tana-tex.com/' },
+        { src: 'assets/images/logos/prod_41.png', link: 'https://www.janusetcie.com/residential/' },
+        { src: 'assets/images/logos/prod_42.png', link: 'https://www.hollyhunt.com/' },
+        { src: 'assets/images/logos/prod_43.png', link: 'https://www.y-o2.com/' },
+        { src: 'assets/images/logos/prod_44.png', link: 'https://example.com/product-44' },
+        { src: 'assets/images/logos/prod_45.png', link: 'https://www.excelwallpapers.com/' }
+    ], 
+    visibleCount: 15
     }" class="flex flex-wrap w-full m-0 p-0">
 
             <!-- Show only the visible logos -->
-            <template x-for="(logo, index) in allLogos.slice(0, visibleCount)" :key="index">
+            <!-- <template x-for="(logo, index) in allLogos.slice(0, visibleCount)" :key="index">
                 <div data-aos="fade-up"
                     class="w-full sm:w-1/2 lg:w-1/4 h-[400px] border border-[#DDDDDD] flex items-center justify-center">
                     <div class="w-[300px] h-[300px] bg-white rounded-lg shadow-md flex items-center justify-center">
                         <img :src="logo" :alt="`Logo ${index + 1}`" class="max-h-[80%] max-w-[80%] object-contain" />
                     </div>
+                </div>
+            </template> -->
+            <template x-for="(logo, index) in allLogos.slice(0, visibleCount)" :key="index">
+                <div data-aos="fade-up"
+                    class="w-full sm:w-1/2 lg:w-1/4 h-[400px] border border-[#DDDDDD] flex items-center justify-center">
+                    <a :href="logo.link" target="_blank" rel="noopener noreferrer">
+                        <div class="w-[300px] h-[300px] bg-white rounded-lg shadow-md flex items-center justify-center">
+                            <img :src="logo.src" :alt="`Logo ${index + 1}`"
+                                class="max-h-[80%] max-w-[80%] object-contain" />
+                        </div>
+                    </a>
                 </div>
             </template>
 
@@ -170,84 +227,87 @@
 
 
     <footer class="bg-[#22252B] text-[#D9D9D9] py-12 px-4 md:px-20">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-      <!-- Section 1: Brand Info -->
-      <div>
-        <div class="mb-6">
-          <img src="assets/images/logo-dark.png" alt="Logo" class="h-[40px] mb-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Section 1: Brand Info -->
+            <div>
+                <div class="mb-6">
+                    <img src="assets/images/logo-dark.png" alt="Logo" class="h-[40px] mb-6">
+                </div>
+                <p class="text-gray-400 mb-6">
+                    We bring your dream to life with unique designs and quality work that speaks louder than words.
+                </p>
+                <div class="flex gap-4 items-center">
+                    <a href="https://instagram.com/leglobaldesign?igshid=YmMyMTA2M2Y=" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                            <path d="M16.5 7.5v.01" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/message/ACACC5ZCUZJVB1" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg>
+                    </a>
+                    <a href="contact.html" aria-label="Call">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Section 2: Links -->
+            <div>
+                <h3 class="text-[#C5A47E] font-semibold mb-4">LINKS</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                    <li><a href="product.html" class="hover:text-white transition">Products</a></li>
+                    <li><a href="service.html" class="hover:text-white transition">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Address -->
+            <div>
+                <h3 class="text-[#C5A47E] font-semibold mb-4">ADDRESS</h3>
+                <p class="text-gray-400 leading-relaxed font-semibold">
+                    Hyde Park Building, 1st Floor, office #4 <br>
+                    Whole sale Market Road, Abu hamour, Doha, Qatar
+                </p>
+            </div>
+
+            <!-- Section 4: Contact Info -->
+            <div>
+                <h3 class="text-[#C5A47E] font-semibold mb-4">CONTACT</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li>Email: <a href="mailto:leglobaldesign.qtr@gmail.com"
+                            class="hover:text-white transition">leglobaldesign.qtr@gmail.com,<br>
+                            exceltrading.qtr@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+97431301177" class="hover:text-white transition">+974 3130 1177,<br> +974
+                            6654 1944</a></li>
+                    <!-- <li>Support: <a href="#" class="hover:text-white transition">support.leglobal.com</a></li> -->
+                </ul>
+            </div>
         </div>
-        <p class="text-gray-400 mb-6">
-          We bring your dream to life with unique designs and quality work that speaks louder than words.
-        </p>
-        <div class="flex gap-4 items-center">
-          <a href="https://instagram.com/leglobaldesign?igshid=YmMyMTA2M2Y=" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-              <path d="M16.5 7.5v.01" />
-            </svg>
-          </a>
-          <a href="https://wa.me/message/ACACC5ZCUZJVB1" aria-label="WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-              <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-            </svg>
-          </a>
-          <a href="contact.html" aria-label="Call">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-            </svg>
-          </a>
+
+        <div class="mt-10 text-center text-sm text-gray-500">
+            &copy; 2025 Le Global Design. All rights reserved.
         </div>
-      </div>
-  
-      <!-- Section 2: Links -->
-      <div>
-        <h3 class="text-[#C5A47E] font-semibold mb-4">LINKS</h3>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-          <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
-          <li><a href="product.html" class="hover:text-white transition">Products</a></li>
-          <li><a href="service.html" class="hover:text-white transition">Services</a></li>
-          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-        </ul>
-      </div>
-  
-      <!-- Section 3: Address -->
-      <div>
-        <h3 class="text-[#C5A47E] font-semibold mb-4">ADDRESS</h3>
-        <p class="text-gray-400 leading-relaxed">
-          124 Creative Studio Ave,<br />
-          2nd Floor, Design Plaza,<br />
-          New York, NY 10001, USA
-        </p>
-      </div>
-  
-      <!-- Section 4: Contact Info -->
-      <div>
-        <h3 class="text-[#C5A47E] font-semibold mb-4">CONTACT</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li>Email: <a href="mailto:hello@leglobal.com" class="hover:text-white transition">hello@leglobal.com</a></li>
-          <li>Phone: <a href="tel:+123456789" class="hover:text-white transition">+1 (234) 567-89</a></li>
-          <li>Support: <a href="#" class="hover:text-white transition">support.leglobal.com</a></li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="mt-10 text-center text-sm text-gray-500">
-      &copy; 2025 Le Global Design. All rights reserved.
-    </div>
-  </footer>
+    </footer>
 
     <script>
         // Mobile menu
@@ -260,10 +320,10 @@
             });
 
             AOS.init({
-            duration: 800,
-            once: true, // animate only once
-        });
-        const showMoreButton = document.querySelector('.show-more-button');
+                duration: 800,
+                once: true, // animate only once
+            });
+            const showMoreButton = document.querySelector('.show-more-button');
             const hiddenItems = document.querySelectorAll('.hidden-item');
 
             let visible = 15;
@@ -275,31 +335,8 @@
                 visible = hiddenItems.length;
                 showMoreButton.style.display = 'none';
             });
-        
+
         });
-
-        // View more button
-//         document.addEventListener('DOMContentLoaded', () => {
-//             const showMoreButton = document.querySelector('.show-more-button');
-//             const hiddenItems = document.querySelectorAll('.hidden-item');
-
-//             let visible = 15;
-
-//             showMoreButton.addEventListener('click', () => {
-//                 for (let i = visible; i < hiddenItems.length; i++) {
-//                     hiddenItems[i].classList.toggle('hidden');
-//                 }
-//                 visible = hiddenItems.length;
-//                 showMoreButton.style.display = 'none';
-//             });
-//         });
-
-//         // AOS
-//         document.addEventListener('DOMContentLoaded', () => {
-//         AOS.init({ duration: 800 });
-//   });
-
-
     </script>
 </body>
 
